@@ -5,6 +5,9 @@
 <link rel='icon' href="gabe.png">
 <style>
 #epic  {
+  display: inline-flex;
+  transition: all 0s ease 1s; /*delay 1s*/
+  visibility: hidden;
   width: 160px;
   height: 10px;
   background-color: white;
@@ -16,6 +19,8 @@
   animation-direction: alternate;
 }
 #epic:hover  {
+ transition-delay: 0s;
+  visibility: visible;
   width: 160px;
   height: 10px;
   background-color: black;
