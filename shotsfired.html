@@ -5,21 +5,23 @@
 <link rel='icon' href="gabe.png">
 <style>
 .a {
+font-size: 110%;
 color: rgb(0, 0, 0);
 text-decoration: none;
-padding: 0px;
+padding: 3px;
 filter: blur(0.7px);
+font-family: Arial, Helvetica, sans-serif;
 }
 .b {
 color: rgb(0, 0, 0);
 text-decoration: none;
 padding: 10px;
-filter: blur(0.7px);
+filter: blur(0.4px);
+font-family: Arial, Helvetica, sans-serif;
 }
 .c {
 color: rgb(0, 0, 0);
 text-decoration: none;
-padding: 10px;
 filter: blur(0.4px);
 font-family: Arial, Helvetica, sans-serif;
 }
@@ -58,26 +60,42 @@ body {
 .sansserif {
   font-family: Arial, Helvetica, sans-serif;
 }
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
 </style>
 </head>
 <body style="background-image: url('doomspire.jpg')">
-<div class="div1">
-<table>
-<thread>
-<tr>
-<th><a class="a" href="https://mrfacstudios.github.io/">Home</a></th>
-<th><a class="b" href="https://discord.gg/R3PXKGa">Discord</a></th>
-</tr>
-</thread>
-</table>
+<div class="div1"></div>
+<div class="dropdown">
+  <b><span class="a">Menu</span></b>
+  <div class="dropdown-content">
+  <a class="c" href="https://mrfacstudios.github.io"><p>Home</p></a>
+  <a class="c" href="https://discord.gg/R3PXKGa"><p>Discord</p></a>
+  <a class="c" href=""><p>More to come soon!</p></a>
+  </div>
 </div>
 <br>
 <center>
-<h1 class="c">Hello!</h1>
-<p class="c">Let's tell you about us.</p>
+<h1 class="b">Sit down and read for a while!/h1>
+<p class="b">Select a link from below.</p>
 <br>
-<p class="d">We are a game development studio for ROBLOX the popular web game. We started our journey in 2016 and progressed from there, from thick and thin, we are the Facbook Studio team and we are proud to present our games to you!</p>
-<p class="e">We make-a-da-game.™</p>
+<a href="https://mrfacstudios.github.io/reviews" class="b">Back</a>
+<br>
+<a href="https://mrfacstudios.github.io/reviews/shotsfired/facbook" class="b">Facbook's Review</a>
 </center>
 </body>
 </html>
