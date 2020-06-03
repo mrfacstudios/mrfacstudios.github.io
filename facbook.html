@@ -87,7 +87,7 @@ background-color: white;
 }
 </style>
 </head>
-<body style="background-image: url('doomspire.jpg')">
+<body onload="newQuote()" style="background-image: url('doomspire.jpg')">
 <div class="div1"></div>
 <div class="dropdown">
   <b><span class="a">Menu</span></b>
@@ -118,6 +118,19 @@ background-color: white;
 <br>
 <br>
 <p class="d">Hello! It is me, Facbook. I just want to let know that our game is underdevelopment at the moment and is being made as we speak! Expect great updates made by me and my team! I'll release a new webpage soon listing some secrets and sneak peeks about the game. See you soon!</p>
+<div id="quoteDisplay">
+</div>
+<script>
+var quotes = [
+'Tip: To get to places faster, click on the Menu!',
+'Tip: You should read our reviews to get a good taste of our games!',
+'Tip: Before you go around taking things from our website, please read the legal document first!'
+]
+function newQuote() {
+var randomNumber = Math.floor(Math.random() * (quotes.length));
+document.getElementById('quoteDisplay').innerHTML = quotes[randomNumber];
+}
+</script>
 </center>
 </body>
 </html>

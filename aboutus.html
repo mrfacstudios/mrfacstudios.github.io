@@ -78,7 +78,7 @@ body {
 }
 </style>
 </head>
-<body style="background-image: url('doomspire.jpg')">
+<body onload="newQuote()" style="background-image: url('doomspire.jpg')">
 <div class="div1"></div>
 <div class="dropdown">
   <b><span class="a">Menu</span></b>
@@ -97,9 +97,22 @@ body {
 <br>
 <p class="d">We are a game development studio for ROBLOX the popular web game. We started our journey in 2016 and progressed from there, from thick and thin, we are the Facbook Studio team and we are proud to present our games to you!</p>
 <p class="e">We make-a-da-game.™</p>
-<label for="file">Progress until 2.0, 32%</label>
+<label for="file">Progress until 2.0, 40%</label>
 <br>
-<progress id="file" value="32" max="100"> 32% </progress>
+<progress id="file" value="40" max="100"> 40% </progress>
+<div id="quoteDisplay">
+</div>
+<script>
+var quotes = [
+'Tip: To get to places faster, click on the Menu!',
+'Tip: You should read our reviews to get a good taste of our games!',
+'Tip: Before you go around taking things from our website, please read the legal document first!'
+]
+function newQuote() {
+var randomNumber = Math.floor(Math.random() * (quotes.length));
+document.getElementById('quoteDisplay').innerHTML = quotes[randomNumber];
+}
+</script>
 </center>
 </body>
 </html>

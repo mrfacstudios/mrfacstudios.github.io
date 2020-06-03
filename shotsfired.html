@@ -78,7 +78,7 @@ body {
 }
 </style>
 </head>
-<body style="background-image: url('doomspire.jpg')">
+<body onload="newQuote()" style="background-image: url('doomspire.jpg')">
 <div class="div1"></div>
 <div class="dropdown">
   <b><span class="a">Menu</span></b>
@@ -99,6 +99,19 @@ body {
 <br>
 <br>
 <a class="d" href="https://mrfacstudios.github.io/facbook" class="b">Facbook's Review</a>
+<div id="quoteDisplay">
+</div>
+<script>
+var quotes = [
+'Tip: To get to places faster, click on the Menu!',
+'Tip: You should read our reviews to get a good taste of our games!',
+'Tip: Before you go around taking things from our website, please read the legal document first!'
+]
+function newQuote() {
+var randomNumber = Math.floor(Math.random() * (quotes.length));
+document.getElementById('quoteDisplay').innerHTML = quotes[randomNumber];
+}
+</script>
 </center>
 </body>
 </html>
