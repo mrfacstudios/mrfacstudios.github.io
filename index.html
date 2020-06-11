@@ -93,6 +93,15 @@ body {
 .dropdown:hover .dropdown-content {
   display: block;
 }
+.tips {
+width: 300px;
+background-color: black;
+color: rgb(255, 255, 255);
+text-decoration: none;
+padding: 10px;
+filter: blur(0.4px);
+font-family: Arial, Helvetica, sans-serif;
+}
 </style>
 </head>
 <body onload="newQuote()" style="background-image: url('Background.png')">
@@ -106,15 +115,10 @@ body {
   <a class="c" href=""><p>More to come soon!</p></a>
   </div>
 </div>
-<br>
+<br><center>
 <h1 class="b">Mr_Fac's Studios</h1>
 <p class="b">Welcome to Mr_Fac's Studios! (This website is meant for Chrome)</p>
-<br>
-<br>
-<br>
-<br>
-<br>
-<div id="quoteDisplay">
+<div class="tips" id="quoteDisplay">
 </div>
 <script>
 var quotes = [
@@ -133,7 +137,7 @@ document.getElementById('quoteDisplay').innerHTML = quotes[randomNumber];
 <br>
 <br>
 <br>
-<br>
+<br></center>
 <p class="b" id="epic">We make-a-da-game.™</p>
 </body>
 </html>

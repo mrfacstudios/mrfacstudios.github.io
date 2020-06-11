@@ -76,6 +76,15 @@ body {
 .dropdown:hover .dropdown-content {
   display: block;
 }
+.tips {
+width: 300px;
+background-color: black;
+color: rgb(255, 255, 255);
+text-decoration: none;
+padding: 10px;
+filter: blur(0.4px);
+font-family: Arial, Helvetica, sans-serif;
+}
 </style>
 </head>
 <body onload="newQuote()" style="background-image: url('Background.png')">
@@ -93,11 +102,11 @@ body {
 <center>
 <h1 class="b">Hello!</h1>
 <p class="b">Let's tell you about us.</p>
-<br>
+<img src="President1.png" alt="Warrencrapapple">
 <p class="d">We are a game development studio for ROBLOX the popular web game. We started our journey in 2016 and progressed from there, from thick and thin, we are the Facbook Studio team and we are proud to present our games to you!</p>
 <p class="e">We make-a-da-game.™</p>
-<br>
-<img src="President1.png" alt="Warrencrapapple">
+<div class="tips" id="quoteDisplay">
+</div>
 <script>
 var quotes = [
 'Tip: To get to places faster, click on the Menu!',
@@ -108,7 +117,6 @@ function newQuote() {
 var randomNumber = Math.floor(Math.random() * (quotes.length));
 document.getElementById('quoteDisplay').innerHTML = quotes[randomNumber];
 }
-<a href="//www.dmca.com/Protection/Status.aspx?ID=d15fa240-8d20-42f8-a3a4-01a7bea0d387" title="DMCA.com Protection Status" class="dmca-badge"> <img src ="https://images.dmca.com/Badges/dmca_protected_26_120.png?ID=d15fa240-8d20-42f8-a3a4-01a7bea0d387"  alt="DMCA.com Protection Status" /></a>  <script src="https://images.dmca.com/Badges/DMCABadgeHelper.min.js"> </script>
 </script>
 </center>
 </body>

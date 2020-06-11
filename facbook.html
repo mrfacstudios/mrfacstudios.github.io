@@ -79,11 +79,15 @@ body {
 .user {
 background-color: lightgrey;
 border: 1px solid black;
-position: absolute;
-right: 691px;
-top: 254px;
 }
-background-color: white;
+.tips {
+width: 300px;
+background-color: black;
+color: rgb(255, 255, 255);
+text-decoration: none;
+padding: 10px;
+filter: blur(0.4px);
+font-family: Arial, Helvetica, sans-serif;
 }
 </style>
 </head>
@@ -101,23 +105,13 @@ background-color: white;
 <br>
 <center>
 <h1 class="b">Sit down and read for a while!</h1>
-<p class="b">Select a link from below.</p>
-<br>
 <a href="https://mrfacstudios.github.io/shotsfired" class="b">Back</a>
 <br>
-<br></center>
+<br>
 <a href="https://www.roblox.com/users/60533836/profile"><img class="user" src="Facbook.png" alt="Facbook11111"></img><a/>
-<center>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
 <br>
 <p class="d">Hello! It is me, Facbook. I just want to let know that our game is underdevelopment at the moment and is being made as we speak! Expect great updates made by me and my team! I'll release a new webpage soon listing some secrets and sneak peeks about the game. See you soon!</p>
-<div id="quoteDisplay">
+<div class="tips" id="quoteDisplay">
 </div>
 <script>
 var quotes = [
@@ -130,6 +124,7 @@ var randomNumber = Math.floor(Math.random() * (quotes.length));
 document.getElementById('quoteDisplay').innerHTML = quotes[randomNumber];
 }
 </script>
+<br>
 <a href="//www.dmca.com/Protection/Status.aspx?ID=d15fa240-8d20-42f8-a3a4-01a7bea0d387" title="DMCA.com Protection Status" class="dmca-badge"> <img src ="https://images.dmca.com/Badges/dmca_protected_26_120.png?ID=d15fa240-8d20-42f8-a3a4-01a7bea0d387"  alt="DMCA.com Protection Status" /></a>  <script src="https://images.dmca.com/Badges/DMCABadgeHelper.min.js"> </script>
 </center>
 </body>
